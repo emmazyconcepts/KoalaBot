@@ -1,9 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"); */
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,
+    "Mochiy Pop One";
+}
+
+section {
+  background-image: url("../../koala/public/image/hehe.svg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 a {
@@ -11,6 +28,45 @@ a {
   text-decoration: none;
 }
 
+.lolo {
+  margin-top: -140px;
+}
+@media screen and (max-width: 770px) {
+  .lolo {
+    margin-top: 0px;
+  }
+}
+
+.logo {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+li {
+  font-family: "Mochiy Pop One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.font {
+  font-family: "Mochiy Pop One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 38px;
+}
+.imagehead {
+  top: 130px !important;
+}
+
+.imagehead2 {
+  top: 210px !important;
+}
+.text1 {
+  margin-top: 205px !important;
+}
 * {
   box-sizing: border-box;
 }
@@ -21,6 +77,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: #151515;
   }
 }
